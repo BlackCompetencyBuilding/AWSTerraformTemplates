@@ -79,6 +79,7 @@ resource "aws_security_group" "Repo_SG" {
   }
 }
 
+#Resource to create NFS Repo Server.
 
 resource "aws_instance" "NFS-Repo" {
     depends_on = ["aws_instance.masternode"],
