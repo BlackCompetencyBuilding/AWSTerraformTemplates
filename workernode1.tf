@@ -1,3 +1,4 @@
+#Resource to create second Instance for the Agility Docker Swarm.
 resource "aws_instance" "workernode1" {
   ami = "ami-4934ea31"
   instance_type = "m4.xlarge"
