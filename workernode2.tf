@@ -1,3 +1,4 @@
+#Resource to create third instance for the Agility Docker Swarm and initiate the Agility Installation.
 resource "aws_instance" "workernode2" {
   depends_on = ["aws_instance.workernode1"]
   ami = "ami-4934ea31"
